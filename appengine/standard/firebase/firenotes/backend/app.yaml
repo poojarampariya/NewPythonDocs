@@ -9,3 +9,4 @@ handlers:
 
 env_variables:
   GAE_USE_SOCKETS_HTTPLIB : 'true'
+  projectId: "fir-project-f8aa4"
