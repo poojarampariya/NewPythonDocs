@@ -17,18 +17,20 @@ $(function(){
   // deploying the application to a live production environment, change to
   // https://backend-dot-<PROJECT_ID>.appspot.com as specified in the
   // backend's app.yaml file.
-  var backendHostUrl = '<your-backend-url>';
+  var backendHostUrl = 'https://backend-dot-firebaseproject-284103.uk.r.appspot.com';
 
   // [START gae_python_firenotes_config]
   // Obtain the following from the "Add Firebase to your web app" dialogue
   // Initialize Firebase
-  var config = {
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    projectId: "<PROJECT_ID>",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<MESSAGING_SENDER_ID>"
+  var firebaseConfig = {
+    apiKey: "AIzaSyDsRWUKzPSNBDWWScXH0nL0n3Sn_CD20xc",
+    authDomain: "fir-project-f8aa4.firebaseapp.com",
+    databaseURL: "https://fir-project-f8aa4.firebaseio.com",
+    projectId: "fir-project-f8aa4",
+    storageBucket: "fir-project-f8aa4.appspot.com",
+    messagingSenderId: "582440646450",
+    appId: "1:582440646450:web:6f529e373403e8d165092b",
+    measurementId: "G-TE8BGX11BY"
   };
   // [END gae_python_firenotes_config]
 
@@ -79,9 +81,6 @@ $(function(){
       'signInOptions': [
         // Leave the lines as is for the providers you want to offer your users.
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-        firebase.auth.GithubAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID
       ],
       // Terms of service url
